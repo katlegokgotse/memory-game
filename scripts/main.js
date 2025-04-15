@@ -26,12 +26,12 @@ mainCards.forEach(card => {
 
         if (flippedCards.length === 2) {
             totalFlips++;
-            checkForMatch();
+            isCardMatched();
         }
     });
 });
 
-function checkForMatch() {
+function isCardMatched() {
     const [firstCard, secondCard] = flippedCards;
 
     const firstInner = firstCard.querySelector(".flip-card-inner");
