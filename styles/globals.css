@@ -12,6 +12,9 @@ body{
     background-color: #f9ecbd;
     overflow-x: hidden;
     font-family: var(--poppins);
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
 }
 .container{
     display: grid;
@@ -38,6 +41,7 @@ body{
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    cursor: pointer;
 }
 
 .flip-card-front, .flip-card-back {
