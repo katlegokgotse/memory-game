@@ -1,13 +1,11 @@
-ld;
-    background-image: linear-gradient(to right, red, yellow);
-}
+
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    background-image: linear-gradient(to right, red, blue);
+   
 }
 .flip-card {
     perspective: 1000px;
@@ -35,6 +33,7 @@ ld;
 
 .flip-card-front {
     background-color: #bbb;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 .flip-card-back {
